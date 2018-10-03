@@ -7,8 +7,8 @@
 .navbar .navbar-nav .active a:hover,
 .navbar .navbar-nav .active a:focus {
     background-image: none;
-    background-color: #4189C7;
-    color: white;
+    background-color: #f5eb93;
+    color: rgb(10, 10, 10);
 }
 
 @media (min-width: 768px) {
