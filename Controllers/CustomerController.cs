@@ -18,7 +18,7 @@ namespace WebDemoCodeBootcamp.Controllers
 
         [Route("luvut")] //-->"api/customer/luvut"
         public int[] GetLuvut() {
-            return new int[] {1, 2, 3, 4, 5};
+            return new int[] {21, 22, 23, 24, 25};
         }
         public List<Customer> GetCustomers()
         {

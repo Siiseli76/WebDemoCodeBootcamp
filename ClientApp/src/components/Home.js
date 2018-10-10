@@ -18,7 +18,7 @@ export class Home extends Component {
       })
       .then(function (myJson) {
         console.log(JSON.stringify(myJson));
-        that.setState({ luvut: myJson});
+        that.setState({ luvut: myJson });
       });
 
   }
@@ -27,13 +27,19 @@ export class Home extends Component {
 
     console.log("Render-metodissa.");
 
+    const luvut = this.state.luvut.map((luku) =>
+      <li>{luku}</li>
+    );
+
     return (
       <div>
         <h1>Riikan oma webdemo</h1>
         <p>Tervetuloa! testing testing jaadajaada lisää tekstiä Welcome to your new single-page application, built with:</p>
-        <p>{this.state.luvut}</p>
+        <ul>
+          {luvut}
+        </ul>
       </div>
-     
+
     );
   }
 }
