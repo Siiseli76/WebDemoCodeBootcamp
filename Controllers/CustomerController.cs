@@ -20,6 +20,7 @@ namespace WebDemoCodeBootcamp.Controllers
         public int[] GetLuvut() {
             return new int[] {21, 22, 23, 24, 25};
         }
+        [Route("customers")] //-->"api/customer/customers"
         public List<Customer> GetCustomers()
         {
             TestikantaContext context = new TestikantaContext();
